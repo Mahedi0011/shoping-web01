@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+.hero{
+    background-image: url(/img/back-image.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+     
+}
+.hero img{
+    width: 15%;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+nav ul li{
+     display: inline-block;
+     margin-right: 15px;
+     font-size: 18px;
+     font-weight: 400;
+     cursor: pointer;
+}
+.login-btn{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.down-btn{
+    background-image: linear-gradient(30deg,rgb(224, 181, 101),darkorange);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    color: black;
+}
+.down-btn:hover{
+    background-image: linear-gradient(30deg,darkorange,rgb(224, 181, 101));
+    border-top-right-radius: 10px;
+}
+ 
+.container{
+    margin-top: 10%;
+    animation-delay: 3s;
+}
+.container h1{
+    margin-bottom: 2%;
+    font-size: 50px;
+    font-weight: 700;
+}
+.join-btn{
+    background-image: linear-gradient(30deg,rgb(224, 181, 101),darkorange);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    color: black;
+    animation-delay: 3s;
+}
+
+.container p{
+    color: grey;
+    margin-bottom: 2%;
+    
+}
+.girl-img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    top: 12%;
+    animation-delay: 5s;
+     
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
